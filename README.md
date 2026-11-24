@@ -8,13 +8,13 @@ One sentence explaining the modern internet to a time traveler fresh out of the 
 
 ## The sentence
 
-> **Imagine every library, post office, and market on earth joined by one road, where any letter, book, or picture arrives in a blink, and anyone may send or read.**
+> **At the post office on market day, Thomas, imagine every library and market on earth joined by one road, and your letter to Calcutta arrives before its ink dries.**
 
-Built only from things a person from 1800 already knows — a road, a post office, a library, a market — so the traveler can actually picture it: the whole world joined by one road, and anything written or drawn reaching anyone in a blink, with anyone free to send or read.
+A scene, not a definition: Thomas stands at the post office on market day, and the whole world — every library, every market — is joined by a single road. His letter to Calcutta arrives before its ink dries. Every word is one a person from 1800 could already picture: a road, a post office, a library, a market, a letter, ink.
 
 ## How it works
 
-`main.py` (stdlib only) writes the sentence to `MAKEFUN_OUTPUT_DIR/entry.txt` (fallback `/output`), validates it is a single line of 1–200 characters, and verifies the write by reading it back. The entry file is exactly 159 bytes, with no trailing newline.
+`main.py` (stdlib only) writes the sentence to `MAKEFUN_OUTPUT_DIR/entry.txt` (fallback `/output`), validates it is a single line of 1–200 characters ending in a sentence mark, and verifies the write by reading it back. The entry file is exactly 161 bytes, with no trailing newline.
 
 ```sh
 python3 main.py
