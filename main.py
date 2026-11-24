@@ -27,6 +27,8 @@ def main():
         return fail("must not contain tabs")
     if not LINE.strip():
         return fail("must not be only whitespace")
+    if LINE != LINE.strip():
+        return fail("must not have leading or trailing whitespace")
     if LINE[-1] not in ".!?":
         return fail("must be a single sentence ending in . ! or ?")
     out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
