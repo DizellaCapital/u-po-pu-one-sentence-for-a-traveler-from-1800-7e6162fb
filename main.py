@@ -27,6 +27,9 @@ def main():
     if not LINE.strip():
         print("entry must not be only whitespace", file=sys.stderr)
         return 1
+    if LINE[-1] not in ".!?":
+        print("entry must be a single sentence ending in . ! or ?", file=sys.stderr)
+        return 1
     out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
     os.makedirs(out_dir, exist_ok=True)
     path = os.path.join(out_dir, "entry.txt")
